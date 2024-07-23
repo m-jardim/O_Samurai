@@ -19,6 +19,6 @@ AddSpriteAnimationFrame(sprite_background_game, background_game3)
 AddSpriteAnimationFrame(sprite_background_game, background_game4)
 AddSpriteAnimationFrame(sprite_background_game, background_game5)
 AddSpriteAnimationFrame(sprite_background_game, background_game6)
-PlaySprite(sprite_background_game, 10, 1, 1, 6)
+PlaySprite(sprite_background_game, 8, 1, 1, 6)
 
 Return

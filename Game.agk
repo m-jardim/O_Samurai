@@ -49,13 +49,17 @@ dynamic_memory=0
 output_path=
 
 [projectfiles]
-FILE_0=main.agc;-1
-FILE_1=tela_inicial.agc;-1
-FILE_2=background_gameplay.agc;-1
-FILE_3=botoes.agc;-1
+FILE_0=background_gameplay.agc;-1
+FILE_1=botoes.agc;-1
+FILE_2=main.agc;-1
+FILE_3=tela_inicial.agc;-1
+FILE_4=logica_principal.agc;-1
+FILE_5=player_movement.agc;-1
 [files]
-FILE_NAME_0=0;main.agc;28;0
-FILE_NAME_1=0;tela_inicial.agc;12;1
-FILE_NAME_2=0;background_gameplay.agc;17;2
-FILE_NAME_3=0;botoes.agc;0;3
+FILE_NAME_0=0;background_gameplay.agc;11;0
+FILE_NAME_1=0;botoes.agc;0;1
+FILE_NAME_2=0;main.agc;18;2
+FILE_NAME_3=0;tela_inicial.agc;18;3
+FILE_NAME_4=0;logica_principal.agc;3;4
+FILE_NAME_5=1;player_movement.agc;0;5
 [watchvariables]

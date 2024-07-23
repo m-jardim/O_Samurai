@@ -15,9 +15,14 @@ SetSyncRate(60, 0) // limite de 30 fps
 SetScissor(0, 0, 0, 0) // usar o máximo de tela disponível, sem bordas
 UseNewDefaultFonts(1)
 
+playerX = 300
+
 #include "tela_inicial.agc"
 #include "botoes.agc"
+#include "logica_principal.agc"
 #include "background_gameplay.agc"
+#include "player_animation.agc"
+#include "player_movement.agc"
 
 gosub tela_inicial
 
@@ -27,7 +32,7 @@ do
 	
 	//logica principal depois de clicar em "sim"
 	if GetPointerPressed() = 1 AND GetSpriteHitTest(sprite_botao_sim, GetPointerX(), GetPointerY() ) = 1
-		gosub background_gameplay
+		gosub logica_principal
 	endif
     	
     Print(ScreenFPS())	//mostra o fps do game
