@@ -51,9 +51,11 @@ output_path=
 [projectfiles]
 FILE_0=main.agc;-1
 FILE_1=tela_inicial.agc;-1
-FILE_2=efeitos_botoes.agc;-1
+FILE_2=background_gameplay.agc;-1
+FILE_3=botoes.agc;-1
 [files]
-FILE_NAME_0=0;main.agc;27;0
-FILE_NAME_1=0;tela_inicial.agc;69;1
-FILE_NAME_2=1;efeitos_botoes.agc;0;2
+FILE_NAME_0=0;main.agc;28;0
+FILE_NAME_1=0;tela_inicial.agc;12;1
+FILE_NAME_2=0;background_gameplay.agc;17;2
+FILE_NAME_3=0;botoes.agc;0;3
 [watchvariables]

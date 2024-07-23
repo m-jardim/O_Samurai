@@ -17,13 +17,21 @@ UseNewDefaultFonts(1)
 
 #include "tela_inicial.agc"
 #include "botoes.agc"
+#include "background_gameplay.agc"
 
 gosub tela_inicial
 
 do	
+	//controla alguns efeitos nos botoes na tela inicial
 	gosub botoes
+	
+	//logica principal depois de clicar em "sim"
+	if GetPointerPressed() = 1 AND GetSpriteHitTest(sprite_botao_sim, GetPointerX(), GetPointerY() ) = 1
+		gosub background_gameplay
+	endif
     	
-    Print(ScreenFPS())
+    Print(ScreenFPS())	//mostra o fps do game
+    
     Sync()
 
 loop
