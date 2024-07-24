@@ -1,20 +1,34 @@
 player_movement:
 
-key_a_pressed = 0
-key_d_pressed = 0
-
-if GetRawKeyState(30)
-	key_a_pressed = 1
-	print("ola")
-else
-	key_a_pressed = 0
+if GetRawKeyPressed(65) = 0 OR GetRawKeyPressed(68) = 0
+	SetSpriteVisible(sprite_right_idle, 1)
+	SetSpriteVisible(sprite_left_idle, 0)
+	SetSpriteVisible(sprite_right_run, 0)
+	SetSpriteVisible(sprite_left_run, 0)
+	SetSpriteVisible(sprite_right_attack, 0)
+	SetSpriteVisible(sprite_left_attack, 0)
 endif
 
-if GetRawKeyState(32)
-	key_d_pressed = 1
-else
-	key_d_pressed = 0
-endif
+while GetRawKeyPressed(65) <> 0 OR GetRawKeyState(37) <> 0
+	
+	SetSpriteVisible(sprite_right_idle, 1)
+	SetSpriteVisible(sprite_left_idle, 0)
+	SetSpriteVisible(sprite_right_run, 0)
+	SetSpriteVisible(sprite_left_run, 0)
+	SetSpriteVisible(sprite_right_attack, 0)
+	SetSpriteVisible(sprite_left_attack, 0)
+endwhile
+
+while GetRawKeyPressed(68) <> 0 OR GetRawKeyState(39) <> 0
+	
+	SetSpriteVisible(sprite_right_idle, 1)
+	SetSpriteVisible(sprite_left_idle, 0)
+	SetSpriteVisible(sprite_right_run, 0)
+	SetSpriteVisible(sprite_left_run, 0)
+	SetSpriteVisible(sprite_right_attack, 0)
+	SetSpriteVisible(sprite_left_attack, 0)
+endwhile
+
 
 
 	

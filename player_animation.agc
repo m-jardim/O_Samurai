@@ -14,6 +14,7 @@ AddSpriteAnimationFrame(sprite_right_idle, right_idle_samurai3)
 AddSpriteAnimationFrame(sprite_right_idle, right_idle_samurai4)
 AddSpriteAnimationFrame(sprite_right_idle, right_idle_samurai5)
 SetSpritePosition(sprite_right_idle, playerX, 570)
+PlaySprite(sprite_right_idle, 10, 1, 1, 5)
 
 // idle lado esquerdo
 left_idle_samurai1 = LoadImage("left_idle_samurai1.png")
@@ -29,6 +30,7 @@ AddSpriteAnimationFrame(sprite_left_idle, left_idle_samurai3)
 AddSpriteAnimationFrame(sprite_left_idle, left_idle_samurai4)
 AddSpriteAnimationFrame(sprite_left_idle, left_idle_samurai5)
 SetSpritePosition(sprite_left_idle, playerX, 570)
+PlaySprite(sprite_left_idle, 10, 1, 1, 5)
 
 // corrida lado direito
 right_run1 = LoadImage("right_side_run1.png")
@@ -50,6 +52,7 @@ AddSpriteAnimationFrame(sprite_right_run, right_run6)
 AddSpriteAnimationFrame(sprite_right_run, right_run7)
 AddSpriteAnimationFrame(sprite_right_run, right_run8)
 SetSpritePosition(sprite_right_run, playerX, 570)
+PlaySprite(sprite_right_run, 10, 1, 1, 8)
 
 // corrida lado esquerdo
 left_run1 = LoadImage("left_side_run1.png")
@@ -71,6 +74,7 @@ AddSpriteAnimationFrame(sprite_left_run, left_run6)
 AddSpriteAnimationFrame(sprite_left_run, left_run7)
 AddSpriteAnimationFrame(sprite_left_run, left_run8)
 SetSpritePosition(sprite_left_run, playerX, 570)
+PlaySprite(sprite_left_run, 10, 1, 1, 8)
 
 // ataque lado direito
 right_attack1 = LoadImage("right_side_attack1.png")
@@ -86,6 +90,7 @@ AddSpriteAnimationFrame(sprite_right_attack, right_attack3)
 AddSpriteAnimationFrame(sprite_right_attack, right_attack4)
 AddSpriteAnimationFrame(sprite_right_attack, right_attack5)
 SetSpritePosition(sprite_right_attack, playerX, 570)
+PlaySprite(sprite_right_attack, 10, 1, 1, 5)
 
 // ataque lado esquerdo
 left_attack1 = LoadImage("left_side_attack1.png")
@@ -93,6 +98,15 @@ left_attack2 = LoadImage("left_side_attack2.png")
 left_attack3 = LoadImage("left_side_attack3.png")
 left_attack4 = LoadImage("left_side_attack4.png")
 left_attack5 = LoadImage("left_side_attack5.png")
+
+sprite_left_attack = CreateSprite(0)
+AddSpriteAnimationFrame(sprite_left_attack, left_attack1)
+AddSpriteAnimationFrame(sprite_left_attack, left_attack2)
+AddSpriteAnimationFrame(sprite_left_attack, left_attack3)
+AddSpriteAnimationFrame(sprite_left_attack, left_attack4)
+AddSpriteAnimationFrame(sprite_left_attack, left_attack5)
+SetSpritePosition(sprite_right_idle, playerX, 570)
+PlaySprite(sprite_left_attack, 10, 1, 1, 5)
 
 Return
  
