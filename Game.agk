@@ -57,9 +57,9 @@ FILE_4=player_movement.agc;-1
 FILE_5=tela_inicial.agc;-1
 FILE_6=player_animation.agc;-1
 [files]
-FILE_NAME_0=1;background_gameplay.agc;11;0
+FILE_NAME_0=0;background_gameplay.agc;11;0
 FILE_NAME_1=0;logica_principal.agc;4;1
 FILE_NAME_2=0;main.agc;17;2
 FILE_NAME_3=0;player_movement.agc;3;3
-FILE_NAME_4=0;player_animation.agc;0;4
+FILE_NAME_4=1;player_animation.agc;45;4
 [watchvariables]
